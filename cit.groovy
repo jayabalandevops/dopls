@@ -24,5 +24,10 @@ node("$NodeName"){
         load 'app/build.groovy'
         print("Builded the application.")
     }
+    stage("Deploy"){
+        print("Deploying the artifact into tomcat...")
+        sh "chmod +x scripts/dep.sh"
+        sh "scripts/dep.sh"
+    }
 
 }
