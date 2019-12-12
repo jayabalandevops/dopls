@@ -1,5 +1,5 @@
 folder("$BUName"){}
-folder("$BUName/$ProdectName"){}
+folder("$BUName/$ProductName"){}
 pipelineJob("$BUName/$ProductName/CICD_$AppName"){
     parameters{
         stringParam("AppRepo","$ApplicationRepo","Git URL")
