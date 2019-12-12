@@ -7,7 +7,7 @@ pipelineJob("$BUName/$ProductName/CICD_$AppName"){
         stringParam("UnitTestTool","$UnitTestRun","")
         stringParam("AppName","$AppName","")
         activeChoiceParam('Branch'){
-            description('Select the branch')
+            description('Select the  branch')
             filterable()
             choiceType('SINGLE_SELECT')
             groovyScript{
